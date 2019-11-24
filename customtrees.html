@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    var tree = "\n   /\\" + "\n  /  \\" + "\n  /  \\" + "\n /    \\" + "\n/      \\" + "\n   ||" + "\n   ||\n";
+    var repeat = prompt("How many trees would you like to see (maximum 6)", "1");
+    var treeInt = parseInt(repeat);
+
+    if (treeInt === 1) {
+      console.log(tree);
+    } else if (treeInt === 2) {
+      console.log(tree.repeat(2));
+    } else if (treeInt === 3) {
+      console.log(tree.repeat(3));
+    } else if (treeInt === 4) {
+      console.log(tree.repeat(4));
+    } else if (treeInt === 5) {
+      console.log(tree.repeat(5));
+    } else if (treeInt === 6) {
+      console.log(tree.repeat(6));
+    } else if (treeInt > 6) {
+      alert("Maximum is 6");
+    } else if (treeInt < 0) {
+      alert("Can't be negative");
+    }
+  </script>
+  <title>Custom Trees</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
